@@ -1,0 +1,76 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  width: 45%; /* Ensures they stay side-by-side */
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.8rem, 5vw, 4rem);
+  color: #4ECCA3;
+}
+
+p {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 75%;
+  height: auto;
+  max-height: 40dvh;
+}
+
+footer {
+  margin-top: 4%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button button {
+  background-color: #4ECCA3;
+  border: none;
+  padding: clamp(0.5rem, 1.5vh, 1.25rem) clamp(1rem, 3vw, 2.5rem);
+  margin: 1vh 2vw;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  margin-top: 4%;
+}
+
+ @media (max-width: 768px) {
+   .button button{
+     margin-top: 15%
+   }
+   footer{
+     margin-top: 18%
+   }
+ }
+.button button:hover {
+  background-color: #3ca287;
+  transform: scale(1.05);
+}
