@@ -7,7 +7,7 @@
 .dice {
   text-align: center;
   display: inline-block;
-  width: 45%; /* Ensures they stay side-by-side */
+  width: 45%; 
 }
 
 body {
@@ -59,18 +59,38 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   font-size: clamp(0.9rem, 2.5vw, 1.5rem);
-  margin-top: 4%;
+  margin-top: 7%;
 }
 
  @media (max-width: 768px) {
-   .button button{
-     margin-top: 15%
+
+ .button button{
+     margin-top: 15%;
    }
    footer{
-     margin-top: 18%
+     padding-top: 40%;
+   }
+ }
+
+ @media (max-width: 480px) {
+
+ .button button{
+     margin-top: 25%;
+   }
+   footer{
+     padding-top:28%;
+   }
+   .container{
+     padding-top: 18%;
+   }
+   img {
+     width: 30dvw;
+     height:25dvh;
+
    }
  }
 .button button:hover {
   background-color: #3ca287;
   transform: scale(1.05);
 }
+
