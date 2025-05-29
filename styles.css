@@ -7,7 +7,7 @@
 .dice {
   text-align: center;
   display: inline-block;
-  width: 45%; 
+  width: 45%; /* Ensures they stay side-by-side */
 }
 
 body {
@@ -94,3 +94,15 @@ footer {
   transform: scale(1.05);
 }
 
+
+@keyframes roll {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(90deg); }
+  50%  { transform: rotate(180deg); }
+  75%  { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-roll {
+  animation: roll 1s linear;
+}
